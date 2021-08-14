@@ -1,0 +1,194 @@
+.componentView{
+    width: 100vw;
+    height: 100vh;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.animationTop{
+    margin-top: -100/7.5vw;
+    width: 100%;
+    height: 400/7.5vw;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    opacity: 0;
+    .lineWrapper{
+        position: absolute;
+        bottom: 25/7.5vw;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 240/7.5vw;
+        img{
+            height: 100%;
+        }
+    }
+    .starWrapper{
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        img{
+            height: 100%;
+        }
+        .mark{
+            transform: scale(0);
+        }
+    }
+    .imageWrapper{
+        height: 225/7.5vw;
+        width: 227/7.5vw;
+        border-radius: 50%;
+        overflow: hidden;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 40/7.5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        >img{
+            height: 188/7.5vw;
+            width: 188/7.5vw;
+        }
+        .wrong{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            height: 85/7.5vw;
+            width: 24/7.5vw;
+        }
+        .active1{
+            width: 94/7.5vw;
+            height: 70/7.5vw;
+        }
+        .test{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background: #ffffff;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            .left,.right {
+                width: 50%;
+                height: 100%;
+                position: absolute;
+                overflow: hidden;
+                top: 0;
+            }
+            .left{
+                left: 0;
+                //transform: translateX(1px);
+            }
+            .right{
+                right: 0;
+            }
+            .leftProgress{
+                overflow: hidden;
+                //box-sizing: content-box;
+                height: 100%;
+                width: 200%;
+                border-radius: 50%;
+                border: 10/7.5vw solid transparent;
+                border-top: 10/7.5vw solid #c52259;
+                border-right: 10/7.5vw solid #c52259;
+                transform: rotate(45deg);
+                //animation: leftAnimate 4s;
+            }
+            .rightProgress{
+                overflow: hidden;
+                height: 100%;
+                width: 200%;
+                margin-left: -100% - 1/7.5vw;
+                border-radius: 50%;
+                border: 10/7.5vw solid transparent;
+                border-top: 10/7.5vw solid #c52259;
+                border-left: 10/7.5vw solid #c52259;
+                transform: rotate(-45deg);
+                //animation: rightAnimate 2s;
+            }
+
+        }
+    }
+}
+
+.test2{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    border: 10/7.5vw solid #bababa;
+}
+.test3{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    border: 9/7.5vw solid #c52259;
+}
+.mask{
+    position: absolute;
+    right: 65/7.5vw;
+    bottom: 70/7.5vw;
+    width: 96/7.5vw;
+    height: 88/7.5vw;
+    background: #c52259;
+}
+
+.messageRemind{
+    opacity: 0;
+    margin-top: 100/7.5vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .wrongRemind{
+        font-size: 38/7.5vw;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+    .name{
+        margin-top: 75/7.5vw;
+        font-size: 24/7.5vw;
+        letter-spacing: 0.6px;
+    }
+    .message{
+        margin-top: 36/7.5vw;
+        font-size: 28/7.5vw;
+        color: #c71a52;
+        letter-spacing: 1px;
+    }
+    .change{
+        color: inherit;
+    }
+}
+.confirmAgain{
+    opacity: 0;
+    margin: 160/7.5vw auto 0 auto;
+    width: 440/7.5vw;
+    height: 90/7.5vw;
+    border-radius: 45/7.5vw;
+    background: #bababa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span{
+        font-size: 28/7.5vw;
+        color: #ffffff;
+        letter-spacing: 0.5px;
+    }
+}
+.active{
+    background: #d52d68;
+}

@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto,HelveticaNeue,Arial,sans-serif;
+}
+*:before, *:after{
+    background: none !important;
+}
+input,select,option{
+    border-radius: 0;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10.66vw;
+    outline: none;
+    border: none;
+    background: #ffffff;
+    text-indent: 2vw;
+}
+canvas{
+    z-index:  -1;
+}
+html{
+    position: fixed;
+    width: 100%;
+    color: #333333;
+    height: 100%;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background: #ffffff !important;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+.nav-iconfont{
+    font-size: 6.66vw;
+    display: block;
+}
+.nav-text{
+    font-size: 3.2vw;
+}
+.my-nav{
+    height:13.33vw;
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+.am-carousel-wrap-dot{
+    padding-bottom: 4vw;
+}
+
+.am-list-item{
+    padding-left:0 !important;
+}
+.am-modal-transparent .am-modal-content{
+    border-radius: 0 !important;
+}
