@@ -132,7 +132,7 @@ class Index extends Component{
 		return (
 			<div className={style.componentView}>
 				{
-					true ?
+					false ?
 						<Fragment>
 							<div className={style.animationTop} ref={top=>(this.top=top)}>
 								<div className={style.lineWrapper}>
@@ -185,7 +185,7 @@ class Index extends Component{
 							<div className={style.messageRemind} style={{opacity: 1}}>
 								<div className={style.wrongRemind}>验证失败</div>
 								<div className={style.name}>{name ? name : 'Richard Lee'}</div>
-								<div className={style.message}>* 该用户报名该场大师班</div>
+								<div className={style.message}>* 该用户报名该场****</div>
 							</div>
 							<div className={style.confirmAgain} style={{opacity: 1}}>
 								<span>重新验证</span>
